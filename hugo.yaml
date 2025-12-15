@@ -1,0 +1,96 @@
+baseURL: 'https://hugo-ladder.pages.dev'
+title: LADDER
+theme: hugo-theme-ladder
+license: MIT
+licenselink: 'https://github.com/guangzhengli/hugo-theme-ladder/blob/master/LICENSE'
+description: 'A fast, clean Hugo theme'
+hasCJKLanguage: true
+homepage: 'https://hugo-ladder.pages.dev'
+defaultContentLanguage: 'zh'
+googleAnalytics: G-xxx
+pagination:
+  pagerSize: 10
+params:
+  brand: Pub的知识花园
+  avatarURL: /images/avatar.png
+  author: Pub
+  authorDescription: 思想致行
+  info: >-
+    [RSS订阅](/index.xml) · [X](https://x.com/zhirentegong) · [小红书](https://www.xiaohongshu.com/user/profile/5d2144ea0000000010030905) · [微信公众号](#wechat)
+  favicon: /images/avatar.png
+  options:
+    showDarkMode: true
+    enableImgZooming: true
+    enableMultiLang: true
+  darkModeTheme: data-dark-mode
+  #darkModeTheme: icy-dark-mode
+  comments:
+    giscus:
+      enable: true
+      repo: username/repo
+      repo_id: xxx
+      category: Announcements
+      category_id: xxx
+      mapping: pathname
+      position: top
+      lang: en # pick a language from https://github.com/giscus/giscus/tree/main/locales
+    utteranc:
+      enable: false
+      repo: username/xxx
+      issueTerm: pathname
+  analytics:
+    google:
+      SiteVerificationTag: xxx
+    umami:
+      enable: true
+      website_id: xxx
+      url: https://xxx
+  guestbook:
+    title: Guestbook
+    description: Leave a comment below. It could be anything –- question, appreciation, information, or even humor.
+  social:
+    - name: GitHub
+      pre: >-
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+      url: 'https://github.com/PBHAHAHA'
+languages:
+  en:
+    languageName: EN
+    menu:
+      main:
+        - name: Blog
+          url: /post
+          weight: 1
+        - name: Tags
+          url: /tags
+          weight: 2
+        - name: Projects
+          url: /projects
+          weight: 3
+  zh:
+    languageName: 中
+    author: Pub
+    authorDescription: 思想致行
+    info: >-
+      [RSS订阅](/index.xml) · [X](https://x.com/zhirentegong) · [小红书](https://www.xiaohongshu.com/user/profile/5d2144ea0000000010030905) · [微信公众号](#wechat)
+    guestbook:
+      title: 留言板
+      description: 您的评论，会让该网站更精彩！
+    menu:
+      main:
+        - name: 文章
+          url: /post
+          weight: 1
+        - name: 分类
+          url: /tags
+          weight: 2
+        - name: 个人作品
+          url: /projects
+          weight: 3
+taxonomies:
+  series: series
+  tag: tags
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
